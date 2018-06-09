@@ -92,7 +92,7 @@ public class Panel extends JPanel implements ActionListener {
 		long m = 2147483647, a = 16808, c = 0;
 
 		x = (a * x + c) % m;
-		return (l + (x / m) * (h - l));
+		return (l + (x / (m - 1)) * (h - l));
 	}
 
 	@Override
